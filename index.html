@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="css/style.css">
+         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Registration</h1>
+            <form action="#">
+                <div class="user">
+                    <div class="user-input">
+                        <label for="fullname"> Name</label>
+                        <input type="text" id="fullname"placeholder="Enter Full Name">
+                        <p id="fname"></p>
+                    </div>
+
+                    <!-- <div class="user-input">
+                        <label for="username">Last name</label>
+                        <input type="text" id="username"placeholder="Enter User Name">
+                        <p id="lname"></p>
+                    </div> -->
+
+                    <div class="user-input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email"placeholder="Enter Email">
+                        <p id="usermail"></p>
+                    </div>
+
+                    <div class="user-input">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone"placeholder="Enter Phone Number">
+                        <p id="cell"></p>
+                    </div>
+
+                    <div class="user-input">
+                        <label for="password">Password</label>
+                        <input type="password" id="password"placeholder="Enter Password">
+                        <p id="userpass"></p><br>
+                        <p id="upass"></p>
+                    </div>
+
+                    <!-- <div class="user-input">
+                        <label for="fullname">Confirm Password</label>
+                        <input type="password" id="conpassword"placeholder="Enter Confirm Password">
+                        <p id="conpass"></p>
+                    </div> -->
+
+                </div>
+                <div class="gender">
+                    <span class="gender-title">Gender</span>
+                    <div class="gender-category">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+
+                        <input type="radio" name="gender" id="male">
+                        <label for="female">Female</label>
+
+                        <input type="radio" name="gender" id="male">
+                        <label for="other">Other</label>
+                        <p id="gender"></p>
+                    </div>
+                </div>
+
+                <div class="form-submit">
+                    <input type="submit" id="click" class="btn"value="Register" onclick="validate()">
+
+                </div>
+            </form>
+        </div>
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>
